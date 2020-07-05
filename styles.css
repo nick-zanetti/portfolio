@@ -1,0 +1,230 @@
+html {
+  scroll-behavior: smooth;
+  background-color: #222830;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+a {
+  color: white;
+}
+
+.images {
+  max-width: 95%;
+  max-height: 95%;
+  
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1140px;
+  font-family: 'Lato', sans-serif;
+
+}
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: #222830;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid white;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+
+#back-to-top:hover, #back-to-top:focus {
+  color: #434e5e;
+  background-color: white;
+}
+
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 128px;
+}
+
+.nav-item {
+  padding-left: .5em;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro > * {
+  margin: .25em;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  margin: 150px auto 
+}
+
+.skills-wrapper{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-auto-rows: minmax(128px, auto);
+  margin-top: 250px;
+  margin-bottom: 150px;
+}
+
+.skills-text-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.projects-title {
+  text-align: center;
+  margin: 35px 0;
+}
+
+.headline {
+  font-size: 2.5em;
+}
+
+.individual-project-title {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  
+}
+.projects {
+  display: grid;
+  grid-gap: 100px;
+  
+}
+
+.portfolio-item{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(128px, auto);
+  
+}
+
+.portfolio-item > div{
+  background: #222830;
+ 
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 15%;
+}
+
+.line {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 2px;
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+
+#about-me {
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+.bio-pic {
+  border-radius: 50%;
+}
+
+.about-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 200px;
+}
+
+#contact {
+  margin-top: 200px;
+  margin-bottom: 75px;
+}
+
+.contact-methods {
+  margin: auto 35%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.linkedin {
+  width: 48px;
+  height: auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.field-input {
+  background-color: #222830;
+  color: white;
+  outline: none;
+  border: none;
+  border-bottom: .5px solid white; 
+  margin: .7em .7em;
+  font-size: 1.1em;
+}
+
+.message-wrap {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}
+
+.message-field {
+  background-color: #222830;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  outline: none;
+  border: .5px solid white; 
+  border-bottom: .5px solid white; 
+  margin: .7em .7em;
+  font-size: 1.2em;
+  resize: none;
+  height: 200px;
+  width: 100%;
+}
+
+.message-field::placeholder {
+  font-family: 'Lato', sans-serif;
+}
+
+.submit-button {
+  font-size: 1.2em;
+  padding: .5em;
+  background-color: #222830;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid white;
+}
+
+.submit-button:focus, .submit-button:hover {
+  background-color: white;
+  color: #222830;
+}
