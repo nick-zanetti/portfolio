@@ -176,7 +176,7 @@
   </div>
 </div>
 
-<form>
+<form action="POST" data-netlify="true">
   <div class="contact-form">
     <div class="field">
       <input type="text" name="name" id="name" placeholder="Name" class="field-input" /></div> 
@@ -185,6 +185,9 @@
     <div class="message-wrap">
       <textarea name="message" id="message" placeholder="Message..." rows="7" class="message-field"></textarea>
     </div> 
+    <div class="field">
+      <div data-netlify-recaptcha="true"></div>
+    </div>
     <button type="submit" class="submit-button">Submit</button>
     
   </div>
