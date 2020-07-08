@@ -80,6 +80,11 @@ a {
   margin: 150px auto 
 }
 
+.heading-pic{
+  max-width: 75%;
+  max-height: 75%;
+}
+
 .skills-wrapper{
   display: grid;
   grid-template-columns: 30% 70%;
@@ -240,6 +245,18 @@ a {
     font-size: 1.5em;
   }
 
-  
+  .heading-pic{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    
+  }
+
+  .picture {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    margin: 50px auto 
+  }
 
 }
