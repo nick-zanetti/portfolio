@@ -257,11 +257,12 @@ a {
   .portfolio-item{
     display: flex;
     flex-direction: column;
+    margin-left: .5em;
   }
 
   .description{
     font-size: 1.5em;
-    margin-left: .5em;
+    /* margin-left: .5em; */
   }
 
   .heading-pic{
