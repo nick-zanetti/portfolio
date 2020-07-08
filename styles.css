@@ -27,6 +27,8 @@ a {
 
 }
 
+/* BACK TO TOP BUTTON */
+
 #back-to-top {
   display: none;
   position: fixed;
@@ -51,6 +53,7 @@ a {
   background-color: white;
 }
 
+/* NAV BAR */
 
 .nav-bar {
   display: flex;
@@ -62,6 +65,8 @@ a {
 .nav-item {
   padding-left: .5em;
 }
+
+/* INTRO */
 
 .intro {
   display: flex;
@@ -97,6 +102,8 @@ a {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+
+/* PROJECTS */
 
 .projects-title {
   text-align: center;
@@ -147,6 +154,8 @@ a {
   width: 100%;
 }
 
+/* ABOUT ME */
+
 #about-me {
   margin-top: 200px;
   margin-bottom: 30px;
@@ -161,6 +170,8 @@ a {
   grid-template-columns: 1fr 1fr;
   margin-bottom: 200px;
 }
+
+/* CONTACT */
 
 #contact {
   margin-top: 200px;
@@ -184,6 +195,11 @@ a {
   justify-content: center;
   align-items: center;
   margin-bottom: 150px;
+}
+
+.contact-title{
+  text-align: center; 
+  margin-bottom: 25px;
 }
 
 .field-input {
@@ -235,6 +251,8 @@ a {
   color: #222830;
 }
 
+/* MOBILE STUFF */
+
 @media (max-width: 600px) {
   .portfolio-item{
     display: flex;
@@ -257,6 +275,31 @@ a {
     justify-content: center;
     height: 250px;
     margin: 50px auto 
+  }
+
+  .bio-pic {
+    border-radius: 50%;
+    height: 300px;
+
+}
+
+  #about-me{
+    font-size: 2em;
+  }
+
+  .about-description{
+    font-size: 1.5em;
+    margin: auto .5em;
+  }
+
+  .individual-project-title{
+    font-size: 2em;
+  }
+
+  .contact-title{
+    text-align: center; 
+    margin-bottom: 25px;
+    font-size: 2em;
   }
 
 }
