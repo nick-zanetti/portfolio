@@ -121,6 +121,7 @@ a {
   
 }
 
+
 .portfolio-item > div{
   background: #222830;
  
@@ -227,4 +228,18 @@ a {
 .submit-button:focus, .submit-button:hover {
   background-color: white;
   color: #222830;
+}
+
+@media (max-width: 600px) {
+  .portfolio-item{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description{
+    font-size: 1.5em;
+  }
+
+  
+
 }
