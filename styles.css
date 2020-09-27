@@ -24,8 +24,10 @@ a {
   margin: 0 auto;
   max-width: 1140px;
   font-family: 'Lato', sans-serif;
-
+  
 }
+
+
 
 /* BACK TO TOP BUTTON */
 
@@ -64,18 +66,14 @@ a {
 
 .nav-item {
   padding-left: .5em;
+  font-size: 1.2em;
 }
 
 /* INTRO */
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.intro > * {
-  margin: .25em;
+.intro {
+  text-align: center;
 }
 
 .picture {
@@ -92,31 +90,45 @@ a {
 
 .skills-wrapper{
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 30% 35% 35%;
   grid-auto-rows: minmax(128px, auto);
-  margin-top: 250px;
-  margin-bottom: 150px;
+  margin: 0 0 150px 0;
 }
 
-.skills-text-wrapper {
-  display: grid;
-  grid-template-columns: 50% 50%;
+.skills-wrapper > h2 {
+  grid-column: 1 / 2;
+  color:#61dbfb; 
+  font-size: 1.2em; 
+}
+
+.skills-text-left, .skills-text-right {
+  font-size: 1.2em;
+  line-height: 150%;
+}
+
+.skills-text-left > span, .skills-text-right > span {
+  color:#61dbfb; 
+}
+
+.skills-text-left {
+  grid-column: 2 / 3;
+}
+
+.skills-text-right {
+  grid-column: 3 / 4; 
 }
 
 /* PROJECTS */
 
-.projects-title {
+#projects-title {
   text-align: center;
-  margin: 35px 0;
-}
-
-.headline {
-  font-size: 2.5em;
+  margin: 55px 0;
+  font-size: 4em;
 }
 
 .individual-project-title {
   color: white;
-  font-size: 1.5em;
+  font-size: 2.5em;
   text-align: center;
   
 }
@@ -128,23 +140,17 @@ a {
 
 .portfolio-item{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   grid-auto-rows: minmax(128px, auto);
   
 }
 
-
-.portfolio-item > div{
-  background: #222830;
- 
-}
-
 .description {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 15%;
+  font-size: 1.2em;
+  line-height: 150%;
+  margin-top: 20%;
 }
+
 
 .line {
   grid-column-start: 1;
@@ -157,25 +163,30 @@ a {
 /* ABOUT ME */
 
 #about-me {
-  margin-top: 200px;
-  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+#about-me > h3 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 50px;
 }
 
 .bio-pic {
   border-radius: 50%;
+  margin-left: 15%;
 }
 
-.about-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 200px;
+
+.about-description {
+  font-size: 1.2em;
+  line-height: 150%;
 }
 
 /* CONTACT */
 
 #contact {
-  margin-top: 200px;
-  margin-bottom: 75px;
+  margin: 150px 0 50px 0; 
 }
 
 .contact-methods {
@@ -183,6 +194,10 @@ a {
   display: flex;
   justify-content: space-evenly;
 }
+
+/* .contact-methods > a {
+  text-decoration: none;
+} */
 
 .linkedin {
   width: 48px;
@@ -198,8 +213,13 @@ a {
 }
 
 .contact-title{
+  font-size: 2.5em;
   text-align: center; 
-  margin-bottom: 25px;
+  margin-bottom: 50px;
+}
+
+.github-icon {
+  margin: -7px 0 15px 0;
 }
 
 .field-input {
