@@ -148,20 +148,15 @@
 <form action="POST" data-netlify="true" name="contact-form-wrapper" id="netlify-form">
   <div class="contact-form">
     <div class="field">
-      <input type="text" name="name" id="name" placeholder="Name" class="field-input" />
+      <input type="text" name="name" id="name" placeholder="Name" class="field-input" required />
       <br>
-      <small id="name-error" class="error-text">Please enter a name</small>
     </div> 
-      
     <div class="field">
-      <input type="email" name="email" id="email" placeholder="Email" class="field-input"/>
+      <input type="email" name="email" id="email" placeholder="Email" class="field-input" required />
       <br>
-      <small id="email-error" class="error-text">Please enter a valid email</small> 
     </div>
-      
     <div class="message-wrap">
-      <textarea name="message" id="message" placeholder="Message..." rows="7" class="message-field"></textarea>
-      <small id="message-error" class="error-text">Please enter a message</small>
+      <textarea name="message" id="message" placeholder="Message..." rows="7" class="message-field" required ></textarea>
     </div> 
     <div class="field">
       <div data-netlify-recaptcha="true"></div>
