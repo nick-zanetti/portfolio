@@ -19,6 +19,7 @@
   <div class="nav-bar">
     <nav>
       <a href="#skills-wrapper" class="nav-item">Skills</a>
+      <a href="#experience-title" class="nav-item">Experience</a>
       <a href="#projects-title" class="nav-item">Projects</a>
       <a href="#about-me" class="nav-item">About me</a>
       <a href="#contact" class="nav-item">Contact</a>
@@ -36,8 +37,9 @@
 <section class="skills-wrapper" id="skills-wrapper">
   <h2>Skills</h2>
   <div class="skills-text-left">
-    <span>Frontend Web Development</span>
+    <span>Front-End Web Development</span>
     <br>React
+    <br>Vue.js
     <br>Javascript
     <br>HTML
     <br>CSS/SCSS
@@ -51,8 +53,23 @@
   
 </section>
 
-<!-- <h1 id="experience-title">Experience</h1> -->
+<h1 id="experience-title">Experience</h1>
 
+<h2 id="ifu-title">International Family Union - Front-End Developer (Volunteer)</h2> 
+
+
+<div class="experience">
+  <p>International Family Union (IFU) is an international NGO which provides various types of aide and assistance to international students who study abroad in America. As part of the development team, I coordinate with UI/UX designers to implement responsive layouts and optimize the site.<br><br> IFU's website is developed using Vue.js and Nuxt.js. Click <a href="https://ifu-china.com/" target="_blank">here</a> to visit IFU's website.</p>
+  <div class="ifucontainer"><img id="open-image" src="/pictures/IFU logo-BlueText-Vertical.png"></div>
+  <div id="ifu-modal" class="modal">
+    <div class="modal-content">
+      <span id="close">&times;</span>
+      <img src="pictures/ifu-screenshot.png">
+    </div>
+    
+  </div>
+  
+</div>
 
 <!-- PORTFOLIO --------------------------------------------------------------------->
 
@@ -128,14 +145,23 @@
   </div>
 </div>
 
-<form action="POST" data-netlify="true" name="contact-form-wrapper">
+<form action="POST" data-netlify="true" name="contact-form-wrapper" id="netlify-form">
   <div class="contact-form">
     <div class="field">
-      <input type="text" name="name" id="name" placeholder="Name" class="field-input" /></div> 
+      <input type="text" name="name" id="name" placeholder="Name" class="field-input" />
+      <br>
+      <small id="name-error" class="error-text">Please enter a name</small>
+    </div> 
+      
     <div class="field">
-      <input type="email" name="email" id="email" placeholder="Email" class="field-input"/></div> 
+      <input type="email" name="email" id="email" placeholder="Email" class="field-input"/>
+      <br>
+      <small id="email-error" class="error-text">Please enter a valid email</small> 
+    </div>
+      
     <div class="message-wrap">
       <textarea name="message" id="message" placeholder="Message..." rows="7" class="message-field"></textarea>
+      <small id="message-error" class="error-text">Please enter a message</small>
     </div> 
     <div class="field">
       <div data-netlify-recaptcha="true"></div>
