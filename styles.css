@@ -285,9 +285,6 @@ a {
   justify-content: space-evenly;
 }
 
-/* .contact-methods > a {
-  text-decoration: none;
-} */
 
 .linkedin {
   width: 48px;
@@ -362,13 +359,75 @@ a {
 }
 
 
-/* MOBILE STUFF */
+/* MOBILE STUFF *//* MOBILE STUFF *//* MOBILE STUFF *//* MOBILE STUFF *//* MOBILE STUFF *//* MOBILE STUFF */
 
 @media (max-width: 600px) {
+  .nav-bar {
+    margin-right: 2.5%;
+  }
+
+  .nav-item {
+    font-size: 1em;
+  }
+
+  .intro {
+    font-size: 1.5em;
+  }
+
+  .picture {
+    display: none; 
+  }
+
+  .heading-pic {
+    display: none;
+  }
+
+  .skills-wrapper {
+    margin: 75px 10px 75px 10px;
+    grid-template-columns: 20% 50% 30%;
+  }
+
+  #experience-title {
+    font-size: 3em;
+  }
+
+  #ifu-title {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 10% 2%;
+  }
+
+  .experience {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .experience > p {
+    font-size: 1.5em;
+    width: 90%;
+    order: 2;
+  }
+
+  .ifucontainer {
+    width: 250px;
+    height: auto;
+    order: 1;
+  }
+
+  #projects-title {
+    font-size: 3em;
+  }
+
+  .projects {
+    grid-gap: 50px;
+  }
+
   .portfolio-item{
     display: flex;
     flex-direction: column;
-    margin-left: .5em;
+    margin: 0 .5em;
+    /* margin-left: .5em; */
   }
 
   .description{
@@ -383,25 +442,20 @@ a {
     
   }
 
-  .picture {
-    display: flex;
-    justify-content: center;
-    height: 250px;
-    margin: 50px auto 
-  }
-
   .bio-pic {
     border-radius: 50%;
-    height: 300px;
+    width: 100%;
+    height: auto;
+    margin: 0;
 
 }
 
-  #about-me{
-    font-size: 2em;
+  #about-me > h3 {
+    font-size: 3em;
   }
 
   .about-description{
-    font-size: 1.5em;
+    font-size: 1em;
     margin: auto .5em;
   }
 
@@ -409,10 +463,14 @@ a {
     font-size: 2em;
   }
 
+  #contact {
+    margin: 50px 0; 
+  }
+
   .contact-title{
     text-align: center; 
     margin-bottom: 25px;
-    font-size: 2em;
+    font-size: 3em;
   }
 
 }
