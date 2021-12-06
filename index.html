@@ -26,30 +26,26 @@
 <body>
 <button id="back-to-top"><i id="back-to-top-inside" class="fas fa-angle-double-up" aria-hidden="true"></i></button>
 <div class="wrapper">
-  <div class="nav-bar">
-    <nav>
-      <a href="#skills-wrapper" class="nav-item">Skills</a>
-      <a href="#experience-title" class="nav-item">Experience</a>
-      <a href="#projects-title" class="nav-item">Projects</a>
-      <a href="#about-me" class="nav-item">About me</a>
-      <a href="#contact" class="nav-item">Contact</a>
+    <nav class="nav">
+      <a href="#skills-wrapper" class="nav__item">Skills</a>
+      <a href="#experience-title" class="nav__item">Experience</a>
+      <a href="#projects-title" class="nav__item">Projects</a>
+      <a href="#about-me" class="nav__item">About me</a>
+      <a href="#contact" class="nav__item">Contact</a>
     </nav>
-  </div>
-
-<!-- INTRODUCTION ---------------------------------------------------------------------------->
-
-<h1 class="intro">Hi. I'm a web developer based in Washington, D.C.</h1>
-
-<div class="picture">
-  <img src="./pictures/skyline-fixed-2.png" class="heading-pic">
-</div>
-
-<h1 class="heading" id="skills-wrapper">Skills</h1>
-
-<section class="skills-wrapper" >
   
-  <div >
-    
+
+
+<section class="intro">
+  <h1 class="intro__heading">Hi. I'm a web developer based in Washington, D.C.</h1>
+  <div class="intro__picture__wrapper">
+    <img src="./pictures/skyline-fixed-2.png" class="intro__picture">
+  </div>
+</section>
+
+<section class="skills">
+  <h1 class="skills__heading" id="skills-wrapper">Skills</h1>
+  <div class="skills__list">
     <ul>
       <li>Javascript</li>
       <li>React</li>
@@ -57,70 +53,52 @@
       
       <li>Vue.js</li>
     </ul>
-    
-  </div>
-  <div>
     <ul>
       <li>HTML</li>
       <li>CSS</li>
       <li>SASS</li>
     </ul>
-  </div>
-  <div >
     <ul>
       <li>Firebase</li>
       <li>Git</li>
       <li>Bootstrap</li>
     </ul>
-    
   </div>
-  
 </section>
 
-
-
-<h1 id="experience-title" class="heading">Experience</h1>
-
-<h2 class="subtitle">The Collab Lab - Developer</h2> 
-
-<div class="experience">
-  <a href="https://tcl-26-shopping-list.web.app/" target="blank" ><img src="pictures/peasy.png" alt="peasy app"></a>
-  <p id="peasy-graph"> <a href="https://the-collab-lab.codes/" target="blank">The Collab Lab</a>  is a program to help early-career developers gain practical experience with mentorship from professional engineers. During the cohort I participated in, my team built an app called Peasy. Peasy is a shopping list that learns your buying habits over time and suggests future purchases based on your history. <br><br> The app was developed primarily in pair-programming sessions, and uses React and Firebase. <br><br> Click <a href="https://tcl-26-shopping-list.web.app/" target="_blank">here</a> to try out Peasy for yourself.</p>
-  
-  
-</div>
-
-<h2 class="subtitle">International Family Union - Front-End Developer (Volunteer)</h2> 
-
-
-<div class="experience">
-  <p>International Family Union (IFU) is an international NGO which provides various types of aide and assistance to international students who study abroad in America. As part of the development team, I coordinate with UI/UX designers to implement responsive layouts and optimize the site.<br><br> IFU's website is developed using Vue.js and Nuxt.js. Click <a href="https://ifuglobal.org/" target="_blank">here</a> to visit IFU's website.</p>
-  <div class="ifucontainer"><img id="open-image" src="/pictures/IFU logo-BlueText-Vertical.png"></div>
-  <div id="ifu-modal" class="modal">
-    <div class="modal-content">
-      <span id="close">&times;</span>
-      <img src="pictures/ifu-screenshot.png">
-    </div>
-    
-  </div>
-  
-</div>
-
+<section class="experience">
+  <h1 id="experience-title" class="experience__heading">Experience</h1>
+    <h2 class="subtitle">The Collab Lab - Developer</h2> 
+    <article class="experience__item">
+      <a href="https://tcl-26-shopping-list.web.app/" target="blank" ><img src="pictures/peasy.png" alt="peasy app"></a>
+      <p id="peasy-graph" class="experience__item__content peasy"> <a href="https://the-collab-lab.codes/" target="blank">The Collab Lab</a>  is a program to help early-career developers gain practical experience with mentorship from professional engineers. During the cohort I participated in, my team built an app called Peasy. Peasy is a shopping list that learns your buying habits over time and suggests future purchases based on your history. <br><br> The app was developed primarily in pair-programming sessions, and uses React and Firebase. <br><br> Click <a href="https://tcl-26-shopping-list.web.app/" target="_blank">here</a> to try out Peasy for yourself.</p>
+    </article>
+    <h2 class="subtitle">International Family Union - Front-End Developer (Volunteer)</h2>
+    <article class="experience__item">
+      <p class="experience__item__content">International Family Union (IFU) is an international NGO which provides various types of aide and assistance to international students who study abroad in America. As part of the development team, I coordinate with UI/UX designers to implement responsive layouts and optimize the site.<br><br> IFU's website is developed using Vue.js and Nuxt.js. Click <a href="https://ifuglobal.org/" target="_blank">here</a> to visit IFU's website.</p>
+      <div class="ifucontainer"><img id="open-image" src="/pictures/IFU logo-BlueText-Vertical.png"></div>
+      <div id="ifu-modal" class="modal">
+        <div class="modal-content">
+          <span id="close">&times;</span>
+          <img src="pictures/ifu-screenshot.png">
+        </div>
+      </div>
+    </article> 
+</section>
 
 
 <!-- PORTFOLIO --------------------------------------------------------------------->
 
 
 
-<h1 id="projects-title">Projects</h1>
+
 
   
 <section class="projects">
-
-
-  <div class="portfolio-item">
+  <h1 id="projects-title" class="projects__title">Projects</h1>
+  <article class="project__item">
     <div>
-      <h4 class="individual-project-title">Giovanni's Restaurant</h4> 
+      <h4 class="project__item__title">Giovanni's Restaurant</h4> 
       <a href="https://giovannis.netlify.app/" target="_blank"><img src="./pictures//giovannis-2.png" class="images"></a>
       <span><img src="./pictures/iconfinder_React.js_logo_1174949.png" style="width:40px; height:40px;"></span>
       <span class="devicons devicons-javascript" style="font-size: 2.5em; width: auto;"></span>
@@ -129,13 +107,13 @@
       <a href="https://github.com/nick-zanetti/giovannis-new" target="_blank"><span class="devicons devicons-github_badge" style="font-size: 2.5em; width: auto;"></a>
     </div>
     <p class="description">A restaurant website with the ability to order delivery. This app also uses a tool called emailjs to email a user their order receipt after they checkout. Built using React, Redux, and React Bootstrap.</p>
-  </div>
+  </article>
 
   <div class="line"></div>
 
-  <div class="portfolio-item">
+  <article class="project__item">
     <div>
-      <h4 class="individual-project-title">Industry Money</h4> 
+      <h4 class="project__item__title">Industry Money</h4> 
       <a href="https://nick-zanetti.github.io/industry-contributions/" target="_blank"><img src="./pictures/industry-monitor-new.png" class="images"></a>
       <span><img src="./pictures/iconfinder_React.js_logo_1174949.png" style="width:40px; height:40px;"></span>
       <span class="devicons devicons-javascript" style="font-size: 2.5em; width: auto;"></span>
@@ -144,13 +122,13 @@
       <a href="https://github.com/nick-zanetti/industry-contributions" target="_blank"><span class="devicons devicons-github_badge" style="font-size: 2.5em; width: auto;"></a>
     </div>
     <p class="description">The industry money app uses Open Secrets web api to find out how much money a member of Congress of your choice has received from various industries.</p>
-  </div>
+  </article>
 
   <div class="line"></div>
 
-  <div class="portfolio-item">
+  <article class="project__item">
     <div>
-      <h4 class="individual-project-title">Most Played</h4> 
+      <h4 class="project__item__title">Most Played</h4> 
       <a href="https://most-played.herokuapp.com/" target="_blank"><img src="./pictures/most-played-monitor.png" class="images"></a>
       <span><img src="./pictures/iconfinder_React.js_logo_1174949.png" style="width:40px; height:40px;"></span>
       <span class="devicons devicons-javascript" style="font-size: 2.5em; width: auto;"></span>
@@ -159,9 +137,7 @@
       <a href="https://github.com/nick-zanetti/most-played" target="_blank"><span class="devicons devicons-github_badge" style="font-size: 2.5em; width: auto;"></a>
     </div>
     <p class="description">The most played app uses Spotify's web api to show the user their most played songs over three possible periods of time. Another cool feature is that a sample of each song will play when the user moves their mouse over it. I created this because I love Spotify's year in review where they show you your most played songs, this app allows you to look whenever you want. I created this in React. For backend authentication, the app links to a node app provided by Spotify developers.</p>
-  </div>
-
-  
+  </article>
 
   <div class="line"></div>
 
@@ -171,19 +147,19 @@
 
 <section id="about-me">
   <h3>About Me</h3>
-  <div class="portfolio-item">
+  <article class="project__item">
     <img src="./pictures/bio-pic.jpg" class="bio-pic">
     <p class="description">I am a self-taught web developer and am currently front end focused. I am passionate about clean, functional design and code. I have lived in D.C. since 2012 and love it here! I was born and raised in Colorado (go Broncos). Outside of work I love to travel and see live music. </p>
-  </div>
+  </article>
 </section>
 
-<div id="contact">
+<article id="contact">
   <h3 class="contact-title">Contact Me</h3>
   <div class="contact-methods">
     <a href="https://www.linkedin.com/in/nickzanetti/" target="_blank"><span><img src="./pictures/linkedin-white.png" class="linkedin"></span></a>
     <a href="https://github.com/nick-zanetti" target="_blank" class="github-icon"><span class="devicons devicons-github_badge" style="font-size: 3em; width: auto;"></a>
   </div>
-</div>
+</article>
 
 <form action="POST" data-netlify="true" name="contact-form-wrapper" id="netlify-form">
   <div class="contact-form">
@@ -206,7 +182,7 @@
   </div>
 </form>
 
-
+</div>
 <script src="main.js"></script>
 </body>
 </html>

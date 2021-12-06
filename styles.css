@@ -14,6 +14,17 @@ a {
   color: white;
 }
 
+h2 {
+  color:#61dbfb; 
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
 .images {
   max-width: 95%;
   max-height: 95%;
@@ -24,7 +35,7 @@ a {
   margin: 0 auto;
   max-width: 1140px;
   font-family: 'Lato', sans-serif;
-  
+ 
 }
 
 
@@ -64,14 +75,14 @@ a {
 
 /* NAV BAR *//* NAV BAR *//* NAV BAR *//* NAV BAR *//* NAV BAR *//* NAV BAR *//* NAV BAR */
 
-.nav-bar {
+.nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 128px;
 }
 
-.nav-item {
+.nav__item {
   padding-left: .5em;
   font-size: 1.2em;
 }
@@ -79,38 +90,39 @@ a {
 /* INTRO *//* INTRO *//* INTRO *//* INTRO *//* INTRO *//* INTRO *//* INTRO */
 
 
-.intro {
+.intro__heading {
+  font-size: 2em;
   text-align: center;
 }
 
-.picture {
+.intro__picture__wrapper {
   display: flex;
   justify-content: center;
   height: 250px;
   margin: 150px auto 
 }
 
-.heading-pic{
+.intro__picture {
   max-width: 75%;
   max-height: 75%;
 }
 
-.skills-wrapper{
+/* SKILLS *//* SKILLS *//* SKILLS *//* SKILLS *//* SKILLS *//* SKILLS *//* SKILLS */
+
+
+.skills__heading {
+  text-align: center;
+  margin: 55px 0;
+  font-size: 4em;
+  font-weight: 100;
+}
+
+.skills__list {
   display: flex;
   justify-content: space-around;
   margin: 0 25% 0 25%;
   font-size: 1.2em;
   line-height: 150%;
-}
-
-h2 {
-  color:#61dbfb; 
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-ul {
-  list-style-type: none;
 }
 
 
@@ -125,17 +137,31 @@ ul {
   font-size: 1.8em;
 }
 
-.experience {
+.experience__heading {
+  text-align: center;
+  margin: 55px 0;
+  font-size: 4em;
+  font-weight: 100;
+}
+
+.experience__item {
   display: flex;
   justify-content: space-between;
 }
 
-.experience > a > img {
+.experience__item > a > img {
   height: 800px;
   width: auto;
 }
 
-#peasy-graph {
+.experience__item__content {
+  padding-top: 20px;
+  width: 70%;
+  font-size: 1.2em;
+  line-height: 150%;
+}
+
+.peasy {
   padding-top: 15%;
 }
 
@@ -162,12 +188,6 @@ ul {
  
 }
 
-.experience > p {
-  padding-top: 20px;
-  width: 70%;
-  font-size: 1.2em;
-  line-height: 150%;
-}
 
 .modal {
   margin: 25px 25px;
@@ -211,14 +231,21 @@ ul {
 
 /* PROJECTS *//* PROJECTS *//* PROJECTS *//* PROJECTS *//* PROJECTS *//* PROJECTS *//* PROJECTS */
 
-#projects-title {
+.projects__title {
   text-align: center;
   margin: 55px 0;
   font-size: 4em;
   font-weight: 100;
 }
 
-.individual-project-title {
+.project__item{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: minmax(128px, auto);
+  
+}
+
+.project__item__title {
   color: white;
   font-size: 2.5em;
   text-align: center;
@@ -230,12 +257,7 @@ ul {
   
 }
 
-.portfolio-item{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-auto-rows: minmax(128px, auto);
-  
-}
+
 
 .description {
   font-size: 1.2em;
@@ -364,27 +386,27 @@ ul {
 /* MOBILE STUFF *//* MOBILE STUFF *//* MOBILE STUFF *//* MOBILE STUFF *//* MOBILE STUFF *//* MOBILE STUFF */
 
 @media (max-width: 600px) {
-  .nav-bar {
+  .nav {
     margin-right: 2.5%;
   }
 
-  .nav-item {
+  .nav__item {
     font-size: 1em;
   }
 
-  .intro {
+  .intro__heading {
     font-size: 1.5em;
   }
 
-  .picture {
+  .intro__picture__wrapper {
     display: none; 
   }
 
-  .heading-pic {
+  .intro__picture {
     display: none;
   }
 
-  .skills-wrapper {
+  .skills__list {
     margin: 75px 10px 75px 10px;
     grid-template-columns: 20% 50% 30%;
   }
@@ -399,13 +421,14 @@ ul {
     margin: 10% 2%;
   }
 
-  .experience {
+  .experience__item {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
   }
 
-  .experience > p {
+
+  .experience__item > p {
     font-size: 1.5em;
     width: 90%;
     order: 2;
@@ -419,13 +442,18 @@ ul {
 
   #projects-title {
     font-size: 3em;
+    margin-bottom: 0;
+  }
+
+  .project__item__title{
+    font-size: 2em;
   }
 
   .projects {
     grid-gap: 50px;
   }
 
-  .portfolio-item{
+  .project__item{
     display: flex;
     flex-direction: column;
     margin: 0 .5em;
@@ -461,9 +489,7 @@ ul {
     margin: auto .5em;
   }
 
-  .individual-project-title{
-    font-size: 2em;
-  }
+  
 
   #contact {
     margin: 50px 0; 
