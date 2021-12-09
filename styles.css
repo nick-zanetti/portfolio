@@ -66,13 +66,6 @@ ul {
   background-color: white;
 }
 
-.heading {
-  text-align: center;
-  margin: 55px 0;
-  font-size: 4em;
-  font-weight: 100;
-}
-
 /* NAV BAR *//* NAV BAR *//* NAV BAR *//* NAV BAR *//* NAV BAR *//* NAV BAR *//* NAV BAR */
 
 .nav {
@@ -291,12 +284,6 @@ ul {
   margin-left: 15%;
 }
 
-
-.about-description {
-  font-size: 1.2em;
-  line-height: 150%;
-}
-
 /* CONTACT */
 
 #contact {
@@ -402,10 +389,6 @@ ul {
     display: none; 
   }
 
-  .intro__picture {
-    display: none;
-  }
-
   .skills__list {
     margin: 75px 10px 75px 10px;
     grid-template-columns: 20% 50% 30%;
@@ -465,13 +448,6 @@ ul {
     /* margin-left: .5em; */
   }
 
-  .heading-pic{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    
-  }
-
   .bio-pic {
     border-radius: 50%;
     width: 100%;
@@ -483,13 +459,6 @@ ul {
   #about-me > h3 {
     font-size: 3em;
   }
-
-  .about-description{
-    font-size: 1em;
-    margin: auto .5em;
-  }
-
-  
 
   #contact {
     margin: 50px 0; 
