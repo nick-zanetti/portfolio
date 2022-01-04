@@ -26,6 +26,8 @@ ul {
 
 
 .images {
+  width: 540px;
+  height: auto;
   max-width: 95%;
   max-height: 95%;
   
