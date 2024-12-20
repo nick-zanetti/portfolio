@@ -8,39 +8,42 @@ html {
   font-family: Inter, sans-serif;
   font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
 }
-
 @supports (font-variation-settings: normal) {
   :root {
     font-family: InterVariable, sans-serif;
   }
 }
+
 * {
   margin: 0;
   padding: 0;
 }
 
 /* ABOUT ME */
+
 .about-me {
   margin-top: 100px;
-}
-.about-me__title {
-  text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 50px;
-}
-.about-me__body-text {
-  color: #d3d3d3;
-}
-.about-me__bio-pic {
-  display: block;
-  width: 250px;
-  height: auto;
-  border-radius: 50%;
-  margin: auto;
-}
-.about-me__bio-pic:hover {
-  box-shadow: -10px -10px 0px white;
-  cursor: pointer;
-}
 
-/*# sourceMappingURL=styles.css.map */
+  &__title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+  }
+
+  &__body-text {
+    color: #d3d3d3;
+  }
+
+  &__bio-pic {
+    display: block;
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  &__bio-pic:hover {
+    box-shadow: -10px -10px 0px white;
+    cursor: pointer;
+  }
+}
