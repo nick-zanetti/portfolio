@@ -1,7 +1,8 @@
 html {
   scroll-behavior: smooth;
-  background-color: #222830;
-  color: white;
+  background: #fff;
+  background-repeat: no-repeat;
+  color: #444452;
 }
 
 :root {
@@ -19,26 +20,34 @@ html {
   padding: 0;
 }
 
+body {
+  padding: 0 1em;
+  height: 100vh;
+}
+
 /* ABOUT ME */
-.about-me {
-  margin-top: 100px;
+.about {
+  padding: 100px 100px;
 }
-.about-me__title {
-  text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 50px;
+.about__title {
+  font-size: 3rem;
 }
-.about-me__body-text {
-  color: #d3d3d3;
+.about__body {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-top: 2rem;
 }
-.about-me__bio-pic {
+.about__body--name {
+  font-weight: bold;
+}
+.about__bio-pic {
   display: block;
   width: 250px;
   height: auto;
   border-radius: 50%;
   margin: auto;
 }
-.about-me__bio-pic:hover {
+.about__bio-pic:hover {
   box-shadow: -10px -10px 0px white;
   cursor: pointer;
 }

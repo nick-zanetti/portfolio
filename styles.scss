@@ -1,7 +1,9 @@
 html {
   scroll-behavior: smooth;
-  background-color: #222830;
-  color: white;
+  background: #fff;
+  background-repeat: no-repeat;
+  color: #444452;
+ 
 }
 
 :root {
@@ -19,19 +21,28 @@ html {
   padding: 0;
 }
 
+body {
+  padding: 0 1em;
+  height: 100vh;
+}
+
 /* ABOUT ME */
 
-.about-me {
-  margin-top: 100px;
+.about {
+  padding: 100px 100px;
 
   &__title {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 50px;
+    font-size: 3rem;
   }
 
-  &__body-text {
-    color: #d3d3d3;
+  &__body {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 2rem;
+
+    &--name {
+      font-weight: bold;
+    }
   }
 
   &__bio-pic {
