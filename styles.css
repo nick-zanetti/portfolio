@@ -1,8 +1,8 @@
 html {
   scroll-behavior: smooth;
-  background: #fff;
+  background: #f0f0f0;
   background-repeat: no-repeat;
-  color: #444452;
+  color: #2c2c2c;
 }
 
 :root {
@@ -25,7 +25,13 @@ body {
   height: 100vh;
 }
 
-/* ABOUT ME */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #a51919;
+  margin-bottom: 2rem;
+}
+
 .about {
   padding: 100px 100px;
 }
@@ -50,6 +56,39 @@ body {
 .about__bio-pic:hover {
   box-shadow: -10px -10px 0px white;
   cursor: pointer;
+}
+
+.experience {
+  padding: 100px 100px;
+}
+.experience__dates {
+  margin-right: 150px;
+  min-width: 150px;
+}
+.experience__logo {
+  height: 25px;
+  margin-right: 5px;
+  width: auto;
+  display: inline;
+}
+.experience__item {
+  display: flex;
+  margin-bottom: 5rem;
+}
+.experience__description--title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.experience__description--title p {
+  font-weight: bold;
+}
+.experience__description--text {
+  line-height: 1.3rem;
+}
+
+.featured-projects {
+  padding: 100px 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,9 +1,12 @@
+$background-color: #f0f0f0;
+$text-color: #2c2c2c;
+$accent-color: #a51919;
+
 html {
   scroll-behavior: smooth;
-  background: #fff;
+  background: $background-color;
   background-repeat: no-repeat;
-  color: #444452;
- 
+  color: $text-color;
 }
 
 :root {
@@ -26,7 +29,12 @@ body {
   height: 100vh;
 }
 
-/* ABOUT ME */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $accent-color;
+  margin-bottom: 2rem;
+}
 
 .about {
   padding: 100px 100px;
@@ -57,4 +65,42 @@ body {
     box-shadow: -10px -10px 0px white;
     cursor: pointer;
   }
+}
+
+.experience {
+  padding: 100px 100px;
+
+  &__dates {
+    margin-right: 150px;
+    min-width: 150px;
+  }
+  &__logo {
+    height: 25px;
+    margin-right: 5px;
+    width: auto;
+    display: inline;
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 5rem;
+  }
+
+  &__description--title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    p {
+      font-weight: bold;
+    }
+  }
+
+  &__description--text {
+    line-height: 1.3rem;
+  }
+}
+
+.featured-projects {
+  padding: 100px 100px;
 }
